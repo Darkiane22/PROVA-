@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+:root{
+    --corPrincipal:lightblue;
+    --corSecundaria:white;
+}
+
+/* Resentando o css */
+*{
+    margin: 0; /* Margem */
+    padding: 0; /* Espaço interno */
+}
+
+body{
+    
+        background-color:var(--corSecundaria); /*muda a cor do fundo*/
+        background-image:url(../img/Foto.jpg); /*imagem do fundo*/
+        background-repeat:no-repeat;/*define que a imagem de fundo nao vai se repetir*/
+        background-size:cover;/*dimensiona a imagem pra cobrir todo o fundo, mesmo que seja necessario esticar ou corta um poucco a imagem*/
+        font-weight: bold;
+        font-size: 20px;/*tamanho da fonte*/
+        color:white; /* cor da fonte*/
+}
+header, main{
+    width: 800px;
+    margin: 0 auto;
+}
+
+
+ul{
+    list-style: none;/*desativa as bolinhas da lista*/
+    text-align: center; /*alinha o texto centralizado*/
+}
+
+h2{
+    color: Blue; /* Cor do texto */
+    font-weight: bold; /* Define negrito ou não do texto */
+    font-size:em; /* Tamanho da fonte. 4x mais que o padrão */
+    font-family:'Nosifer', sans-serif; /* Define a fonte */
+    text-shadow:4px 4px 4px white;
+    line-height: 4px; /* Espaço entre linhas */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+
+a{
+    text-decoration: none; /* Desativa/ ativa o sublinhado dos links */
+    color: white;
+    text-shadow:none;
+    cursor: pointer;
+}
+
+.msg-erro{
+    visibility: hidden; /* Oculta o texto */
+    line-height: 3px;
+}
+
+
+.fotos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer{
+    width: 800px;
+    margin: 0 auto;
+    line-height: 100px; 
+    color:blue;
+    text-shadow:none;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+
+label{
+    color: rgb(15, 15, 15);
+    text-align: left; /*Alinhamento a esquerda*/
+    margin: 0px; /*Margem zerada para ficar colada aos inputs*/
+    display: block; /*Bloqueia a linha para ser o único elemento*/
+}
+
+
+
+
+
+button{
+    background-color:  rgb(192, 183, 243);
+    color: black;
+    font-size: 1.2em;
+    width: 200px;
+    padding: 4px;
+    margin: 20px;
+    border-radius: 15px;
+    transition: background-color 1s ease; /*Transição cor de fundo*/
+}
+
+/*Botão no estado de passar o mouse por cima*/
+button:hover{
+    background-color: rgb(192, 183, 243); /*Novo valor da cor de fundo ao passar o mouse*/
+    transform: scale(1.1);
+}
